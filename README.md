@@ -2,6 +2,9 @@
 
 ## **Overview**
 This Data engineering project implements a stock market data pipeline that automates the process of extracting, transforming, and loading (ETL) daily stock data for analysis or other applications. Built with Apache Airflow, MySQL, and Docker, the pipeline is designed to handle large volumes of stock data efficiently and enables analysis through calculated technical indicators.
+<div style="text-align: center;">
+    ![Alt text](diagram.png)
+</div>
 
 ## **Project Objectives**
 - Automate the ETL process for daily stock data in a docker environment.
@@ -24,7 +27,7 @@ The pipeline performs the following steps for each stock:
 
 ---
 
-## **Setup Instructions**
+
 
 ### **Prerequisites**
 - Docker and Docker Compose
