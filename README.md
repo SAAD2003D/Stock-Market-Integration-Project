@@ -7,7 +7,7 @@ This Data engineering project implements a stock market data pipeline that autom
 
 
 ## **Project Objectives**
-- Automate the ETL process for daily stock data in a docker environment.
+- Automate the ETL process for daily stock data(tesla,apple,attijari wafabank,amazon) in a docker environment.
 - Store and manage stock data in a MySQL database.
 - Calculate key technical indicators for data analysis.
 
