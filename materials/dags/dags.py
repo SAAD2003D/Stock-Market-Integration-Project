@@ -14,7 +14,7 @@ default_args = {
 with DAG('stock_data_pipeline', default_args=default_args, schedule_interval='@daily') as dag:
     
     # Tasks for AAPL (Repeat similarly for other stocks)
-  symbols=['AAPL','TSLA','AMZN','ATW','BCP']   
+  symbols=['AAPL','TSLA','AMZN','ATW']   
   for symbol in symbols :
     # Extract step
     download_task = PythonOperator(
