@@ -36,7 +36,7 @@ The pipeline performs the following steps for each stock:
 
 ### **Project Files**
 - materials/dags/dags.py: Main Airflow DAG for orchestrating the ETL pipeline.
-- materials/dags/dags/extract_stocks.py: Python functions for extracting, transforming, and loading stock data, with technical   indicator calculations.
+- materials/dags/extract_stocks.py: Python functions for extracting, transforming, and loading stock data, with technical   indicator calculations.
 - docker-compose.yml: Docker configuration for Airflow, MySQL, Redis, and phpMyAdmin.
 - init.sql: SQL script to initialize the MySQL database schema and tables.
 - env: (Optional) Stores environment variables for Airflow and MySQL.
