@@ -3,11 +3,14 @@ import pandas as pd
 import mysql.connector
 import alpha_vantage
 import requests
+import os
+from dotenv import load_dotenv
 
-API_key='BLERYGTTKC84JRJO'
+load_dotenv('/materials/.env')
+API_key=os.getenv('ALPHA_VANTAGE_API')
 
 def extract (symbol,**context):
-    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&outputsize=full&apikey={API_key}'
+    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&outputsize=compact&apikey={API_key}'
     r = requests.get(url).json()
     data=r
     df=pd.DataFrame(data=data["Time Series (Daily)"]).T
