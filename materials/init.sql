@@ -1,0 +1,2 @@
+GRANT ALL PRIVILEGES ON *.* TO 'airflow_user'@'%';
+FLUSH PRIVILEGES;
